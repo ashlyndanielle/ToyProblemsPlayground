@@ -39,7 +39,7 @@ h1 {
 }
 
 .filterObjectPB {
-  height: 390px
+  /* height: 390px */
 }
 
 .filterStringPB {
@@ -67,7 +67,7 @@ h1 {
 }
 
 .filterObjectRB {
-  height: 95px;
+  height: 150px;
 }
 
 .filterStringRB {
