@@ -12,15 +12,16 @@ class EvenAndOdd extends Component {
   }
 
   sortArray = input => {
-    const parsedArray = [];
+    const splitInput = input.split(',');
     const evens = [];
     const odds = [];
-    input.split(',').forEach( num => {
-      parsedArray.push(parseInt(num, 10));
-    });
-    parsedArray.forEach( num => {
-      num%2 === 0 ? evens.push(num) : odds.push(num);
-    })
+
+    for ( let x = 0; x < splitInput.length; x++ ) {
+      splitInput[x]%2 === 0 ? 
+        evens.push( parseInt(splitInput[x], 10)) :
+        odds.push( parseInt(splitInput[x], 10))
+    }
+
     this.setState({
       userInput: '',
       evens,
@@ -44,8 +45,8 @@ class EvenAndOdd extends Component {
           value={ this.state.input }
         />
         <button className="confirmationButton" onClick={ input => this.sortArray(this.state.userInput) }>Sort Array</button>
-        <span className="resultsBox">Evens: { this.state.evens }</span>
-        <span className="resultsBox">Odds: { this.state.odds }</span>
+        <span className="resultsBox">Evens: { JSON.stringify(this.state.evens) }</span>
+        <span className="resultsBox">Odds: { JSON.stringify(this.state.odds) }</span>
       </div>
     );
   }

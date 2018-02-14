@@ -9,6 +9,11 @@ body {
   color: #fff;
 }
 
+h1 {
+  text-align: center;
+
+}
+
 /* Container Elements */
 .puzzleFeed {
   display: flex;
@@ -19,7 +24,7 @@ body {
 .puzzleBox {
   width: 405px;
   border-radius: 2px;
-  padding: 0px 20px;
+  padding: 10px 30px;
   background-color: #424242;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -56,7 +61,6 @@ body {
   border-radius: 2px;
   background-color: #303030;
   margin-top: 10px;
-  font-family: Roboto;
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
@@ -96,7 +100,6 @@ body {
   border-radius: 2px;
   background-color: #4fc3f7;
   border: none;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
@@ -110,7 +113,6 @@ body {
 
 /* Text */
 h4 {
-  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.4;
@@ -119,7 +121,6 @@ h4 {
 }
 
 .puzzleText {
-  font-family: Roboto;
   font-size: 13px;
   font-weight: normal;
   font-style: normal;
