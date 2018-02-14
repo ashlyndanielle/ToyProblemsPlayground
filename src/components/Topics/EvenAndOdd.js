@@ -19,7 +19,7 @@ class EvenAndOdd extends Component {
       parsedArray.push(parseInt(num, 10));
     });
     parsedArray.forEach( num => {
-      num%2 === 0 ? evens.push(num + ', ') : odds.push(num + ', ');
+      num%2 === 0 ? evens.push(num) : odds.push(num);
     })
     this.setState({
       userInput: '',
